@@ -8,7 +8,7 @@ const Education = () => {
           My Education
         </h1>
       </div>
-      <div className="flex gap-4 px-4">
+      <div className="flex flex-col md:flex-row gap-4 px-4">
         <div className="w-full text-center  bg-base-200 shadow-xl px-[20px] py-[30px] relative overflow-hidden group cursor-pointer rounded-md before:bg-[#00838d] before:w-[38px] before:h-[38px] before:absolute before:top-0 before:right-0 before:rounded-bl-[35px] before:z-[-1] hover:before:scale-[38] before:transition-all before:ease-out before:duration-[300ms] z-[0]">
           <GoArrowDownLeft className="absolute top-2 z-20 right-2 text-[1rem] text-white" />
 

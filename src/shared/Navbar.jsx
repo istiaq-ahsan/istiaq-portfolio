@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#F2F2F2] shadow-md px-5 py-5">
+      <div className="navbar bg-[#F2F2F2] shadow-md px-5 py-5 fixed top-0 z-50 backdrop-blur-2xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -74,7 +74,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 gap-6">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn btn-lg px-3 py-2 text-stone-500 bg-base-300 shadow-md hover:bg-stone-400 hover:text-white">
+          <Link className="btn btn-lg px-3 py-2 text-stone-500 bg-base-300 shadow-md hover:bg-gray-400 hover:text-white">
             Get Resume
           </Link>
         </div>
