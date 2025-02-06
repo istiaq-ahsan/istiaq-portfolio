@@ -21,12 +21,12 @@ const Navbar = () => {
       </NavLink>
 
       <NavLink
-        to="/education"
+        to="/allProject"
         className={({ isActive }) =>
           isActive ? "text-stone-500 font-semibold" : "text-black"
         }
       >
-        Education
+        Projects
       </NavLink>
       <NavLink
         to="/contact"

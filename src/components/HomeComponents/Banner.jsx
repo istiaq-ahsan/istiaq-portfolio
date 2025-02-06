@@ -1,15 +1,13 @@
 import { ReactTyped } from "react-typed";
 import ParticlesComponent from "../ParticlesComponent";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaSquareGithub } from "react-icons/fa6";
 import { FaFacebookSquare, FaWhatsappSquare } from "react-icons/fa";
 
 const Banner = () => {
-  const codeString = `constprofile={
+  const codeString = `constProfile={
 name:'Istiaq Ahsan Romi',
 title:'Junior MERN Stack Developer',
 skills:['React', 'Node', 'Express', 'MongoDB', 'Next', 'JavaScript', 'Git', 'Firebase',],
@@ -36,11 +34,7 @@ this.skills.length>=5
   };
 
   return (
-    <div className="relative w-11/12 mx-auto py-10">
-      <div className="absolute inset-0 -z-10">
-        <ParticlesComponent id="banner-particles" />
-      </div>
-
+    <div className="relative w-11/12 mx-auto pt-12">
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Side */}
         <div className="relative z-10 text-gray-800 md:text-left text-center md:w-[60%] space-y-4">
@@ -78,7 +72,7 @@ this.skills.length>=5
             </Link>
           </div>
           <div className="mt-10">
-            <button className="btn btn-wide bg-gray-500 hover:bg-gray-400 text-white">
+            <button className="btn btn-wide btn-lg bg-gray-500 hover:bg-gray-400 text-white">
               Get Resume
             </button>
           </div>

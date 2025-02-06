@@ -20,7 +20,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="w-11/12 mx-auto bg-base-300 py-10 my-5">
+    <div className="w-11/12 mx-auto bg-base-300 py-10 mb-16">
       <div>
         <h1 className="text-4xl font-bold text-center text-gray-500 mb-10">
           My Project

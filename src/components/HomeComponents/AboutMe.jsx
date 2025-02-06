@@ -15,7 +15,7 @@ const AboutMe = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto py-16">
       <section className="bg-white dark:bg-gray-900">
         <div className="relative flex">
           <div className="min-h-screen lg:w-1/3"></div>

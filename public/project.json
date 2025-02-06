@@ -1,26 +1,64 @@
 [
   {
     "id": 1,
-    "image": "https://i.ibb.co.com/0GtBvV9/ass-12.png",
+    "image": "https://i.ibb.co/0GtBvV9/ass-12.png",
     "title": "HeartMatch",
     "description": "A user-friendly matrimony platform designed to connect individuals seeking meaningful relationships...",
     "liveLink": "https://assignment-12-project-cf2cb.web.app",
-    "repository": "https://github.com/istiaq-ahsan/HeartMatch"
+    "repository": "https://github.com/istiaq-ahsan/HeartMatch",
+    "techStack": ["React.js", "Express.js", "Node.js", "MongoDB", "Firebase"],
+    "moreImages": [
+      "https://i.ibb.co.com/N2h17DLS/banner.png",
+      "https://i.ibb.co.com/TBXgrKM4/screencapture-assignment-12-project-cf2cb-web-app-about-Us-2025-02-06-13-48-36.png",
+      "https://i.ibb.co.com/HfJ4NHTT/details.png",
+      "https://i.ibb.co.com/XZRhd73Z/success.png",
+      "https://i.ibb.co.com/1GgFjVvT/view-Bio-Data.png"
+    ]
   },
   {
     "id": 2,
-    "image": "https://i.ibb.co.com/hCrRQry/Screenshot-10.png",
+    "image": "https://i.ibb.co/hCrRQry/Screenshot-10.png",
     "title": "SprintSphere",
     "description": "A marathon management project that streamlines event registration, participant tracking, and race results.",
     "liveLink": "https://assignment-11-project-68d98.web.app",
-    "repository": "https://github.com/istiaq-ahsan/SprintSphere"
+    "repository": "https://github.com/istiaq-ahsan/SprintSphere",
+    "techStack": [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase"
+    ],
+    "moreImages": [
+      "https://i.ibb.co.com/5PTyyJp/Screenshot-2025-02-06-140613.png",
+      "https://i.ibb.co.com/Kxpb2J3p/screencapture-assignment-11-project-68d98-web-app-marathon-Details-67696892f2fc76e1b5e12e12-2025-02.png",
+      "https://i.ibb.co.com/Xx5xppV7/assignment-11-project-68d98-web-app-add-Marathon-Nest-Hub-Max.png",
+      "https://i.ibb.co.com/vC9ZCZJ3/assignment-11-project-68d98-web-app-add-Marathon-Nest-Hub-Max-3.png",
+      "https://i.ibb.co.com/nJ6xgJh/screencapture-assignment-11-project-68d98-web-app-login-2025-01-30-12-28-29.png"
+    ]
   },
   {
     "id": 3,
-    "image": "https://i.ibb.co.com/zX0x64g/Screenshot-11.png",
+    "image": "https://i.ibb.co/zX0x64g/Screenshot-11.png",
     "title": "CrowdCube",
     "description": "A crowdfunding platform designed to connect entrepreneurs with potential investors and supporters.",
     "liveLink": "https://assignment-10-project-b15d3.web.app",
-    "repository": "https://github.com/istiaq-ahsan/CrowdCube"
+    "repository": "https://github.com/istiaq-ahsan/CrowdCube",
+    "techStack": [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Firebase"
+    ],
+    "moreImages": [
+      "https://i.ibb.co.com/W4pZWZPC/Screenshot-2025-01-22-212021.png",
+      "https://i.ibb.co.com/KjTyL8b0/screencapture-assignment-10-project-b15d3-web-app-about-Us-2025-01-29-23-19-59.png",
+      "https://i.ibb.co.com/gZmN0d7J/screencapture-assignment-10-project-b15d3-web-app-campaign-Details-6751f36c1b403fc2d0ec582d-2025-01.png",
+      "https://i.ibb.co.com/3mynVJt2/assignment-10-project-b15d3-web-app-all-Campaign-Nest-Hub-Max-1.png",
+      "https://i.ibb.co.com/mrgWzsS3/assignment-10-project-b15d3-web-app-all-Campaign-Nest-Hub-Max-3.png"
+    ]
   }
 ]
