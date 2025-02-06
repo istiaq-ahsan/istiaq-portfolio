@@ -2,9 +2,9 @@ import { GoArrowDownLeft } from "react-icons/go";
 
 const Education = () => {
   return (
-    <div className="w-11/12 mx-auto bg-base-300 py-10 my-10">
+    <div className="w-11/12 mx-auto bg-base-300 py-10 mt-16 mb-10">
       <div>
-        <h1 className="text-4xl font-bold text-gray-500 text-center mb-10">
+        <h1 className="text-4xl font-bold text-gray-600 text-center mb-10">
           My Education
         </h1>
       </div>

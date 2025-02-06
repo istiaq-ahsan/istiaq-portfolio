@@ -7,6 +7,17 @@
     "liveLink": "https://assignment-12-project-cf2cb.web.app",
     "repository": "https://github.com/istiaq-ahsan/HeartMatch",
     "techStack": ["React.js", "Express.js", "Node.js", "MongoDB", "Firebase"],
+    "overview": "HeartMatch offers a streamlined experience for users to create detailed profiles, explore potential matches, and interact securely. Our mission is to simplify the process of finding a soulmate by leveraging modern technology and user-centric design.",
+    "feature": [
+      "User Registration & Authentication: Secure login and registration system powered by Firebase.",
+      "Profile Management: Users can create, update, and customize their profiles with personal and preference details.",
+      "Matchmaking Algorithm: Smart recommendations based on user preferences and interests.",
+      "Search and Filter Options: Advanced filters like age, location, and profession make it easy to browse profiles.",
+      "Chat System: Real-time messaging for seamless communication between users.",
+      "Payment Integration: Secure online payment processing powered by Stripe for premium membership features.",
+      "Responsive Design: Fully optimized for desktops, tablets, and mobile devices.",
+      "Admin Dashboard: Admins can manage users, monitor activity, and maintain platform integrity."
+    ],
     "moreImages": [
       "https://i.ibb.co.com/N2h17DLS/banner.png",
       "https://i.ibb.co.com/TBXgrKM4/screencapture-assignment-12-project-cf2cb-web-app-about-Us-2025-02-06-13-48-36.png",
@@ -30,6 +41,14 @@
       "Tailwind CSS",
       "Firebase"
     ],
+    "overview": "SprintSphere enables users to organize and participate in marathon events effortlessly. For Organizers: Create, manage, and track events. For Participants: Browse, register, and track applications through personalized dashboards. Security: Ensures secure authentication and intuitive navigation for a smooth experience.",
+    "feature": [
+      "Secure Authentication: Sign up and log in with email and password. Role-based access for participants and admins. Secure private routes for sensitive functionalities.",
+      "Explore Marathon Events: Browse a list of upcoming marathons. View detailed event information, including location, date, and organizer details. Receive personalized recommendations.",
+      "Marathon Management: Add, update, or delete marathon events. Admin dashboard to manage applicants. Participants can apply, update, or withdraw their applications.",
+      "Personalized Dashboard: Participants: Track registrations and application statuses. Admins: View and manage applicants for their events.",
+      "Real-Time Updates: Instant updates on event changes and application statuses. Notifications for important actions."
+    ],
     "moreImages": [
       "https://i.ibb.co.com/5PTyyJp/Screenshot-2025-02-06-140613.png",
       "https://i.ibb.co.com/Kxpb2J3p/screencapture-assignment-11-project-68d98-web-app-marathon-Details-67696892f2fc76e1b5e12e12-2025-02.png",
@@ -52,6 +71,15 @@
       "MongoDB",
       "Tailwind CSS",
       "Firebase"
+    ],
+    "overview": "CrowdCube enables users to discover and invest in exciting business ventures. Entrepreneurs can showcase their startups, share business goals, and raise funds. Investors can browse campaigns, analyze opportunities, and make informed investments. The platform ensures secure authentication and a streamlined user experience through intuitive navigation and personalized dashboards.",
+    "feature": [
+      "Secure Authentication: Sign up and log in using email/password or social authentication (Google). Private routes ensure secure access to investment opportunities and user profiles.",
+      "Discover Campaigns: Browse a curated list of startups seeking funding. View detailed information on each campaign, including goals, funding progress, and business plans.",
+      "Simple Investment Process: Easily invest in startups through a secure and user-friendly interface. Track your investments and receive updates on campaign progress.",
+      "Personalized Dashboard: Manage your investments, profile, and watchlist. Access investment history and performance analytics.",
+      "Single-Page Application (SPA): Smooth, fast navigation powered by React Router. Fully responsive design for desktop, tablet, and mobile users.",
+      "Engaging UI: Interactive animations and alerts for a dynamic user experience. Real-time updates on campaign statuses and funding goals."
     ],
     "moreImages": [
       "https://i.ibb.co.com/W4pZWZPC/Screenshot-2025-01-22-212021.png",

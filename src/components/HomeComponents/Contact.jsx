@@ -1,12 +1,48 @@
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_YOUR_SERVICE_ID,
+        import.meta.env.VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_YOUR_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your email has been sent successfully!",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          form.current.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div>
       <section className="bg-opacity-50 dark:bg-opacity-50">
         <div className="container px-6 pb-14 mx-auto">
-          <div className="lg:flex lg:items-center lg:-mx-6">
-            <div className="lg:w-1/2 lg:mx-6">
+          <div className="md:flex md:items-center lg:-mx-6">
+            <div className="md:w-1/2 lg:mx-6">
               <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
                 Contact Info
               </h1>
@@ -84,7 +120,10 @@ const Contact = () => {
                 </h3>
 
                 <div className="flex mt-4 -mx-1.5 ">
-                  <Link className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500">
+                  <Link
+                    to="https://github.com/istiaq-ahsan"
+                    className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500"
+                  >
                     <svg
                       className="w-8 h-8"
                       viewBox="0 0 24 24"
@@ -94,7 +133,10 @@ const Contact = () => {
                     </svg>
                   </Link>
 
-                  <Link className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500">
+                  <Link
+                    to="https://www.linkedin.com/in/istiaq-ahsan"
+                    className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500"
+                  >
                     <svg
                       className="w-8 h-8"
                       viewBox="0 0 24 24"
@@ -116,7 +158,10 @@ const Contact = () => {
                     </svg>
                   </Link>
 
-                  <Link className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500">
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=100095084532947"
+                    className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500"
+                  >
                     <svg
                       className="w-8 h-8"
                       viewBox="0 0 24 24"
@@ -130,7 +175,10 @@ const Contact = () => {
                     </svg>
                   </Link>
 
-                  <Link className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500">
+                  <Link
+                    to="https://www.instagram.com/__hydro_carbon__"
+                    className="mx-1.5 dark:hover:text-blue-400 text-gray-700 transition-colors duration-300 transform hover:text-blue-500"
+                  >
                     <svg
                       className="w-8 h-8"
                       viewBox="0 0 24 24"
@@ -147,19 +195,20 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-8 lg:w-1/2 lg:mx-6">
+            <div className="mt-8 md:w-1/2 lg:mx-6">
               <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-base-300 shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                 <h1 className="text-lg font-medium text-gray-700">
                   Let’s work together.
                 </h1>
 
-                <form className="mt-6">
+                <form ref={form} onSubmit={sendEmail} className="mt-6">
                   <div className="flex-1">
                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
                       Full Name
                     </label>
                     <input
                       type="text"
+                      name="from_name"
                       placeholder="Your name"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
@@ -171,6 +220,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
+                      name="from_email"
                       placeholder="Your email"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
@@ -181,6 +231,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
+                      name="from_subject"
                       placeholder="About email"
                       className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
@@ -192,12 +243,13 @@ const Contact = () => {
                     </label>
                     <textarea
                       className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      name="message"
                       placeholder="Message"
                     ></textarea>
                   </div>
 
                   <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                    get in touch
+                    Send Email
                   </button>
                 </form>
               </div>

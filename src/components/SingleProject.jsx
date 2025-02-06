@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 
 const SingleProject = ({ oneProject }) => {
   return (
-    <div className="flex space-x-8 items-center shadow-lg border-1 border-gray-300 p-4">
+    <div className="flex flex-col md:flex-row md:space-x-8 space-y-6 md:space-y-0 items-center shadow-lg border border-gray-300 p-4">
       {/* Left Side: Slider */}
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -38,11 +38,11 @@ const SingleProject = ({ oneProject }) => {
       </div>
 
       {/* Right Side: Project Description */}
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl font-semibold">{oneProject.title}</h2>
         <p className="mt-4">{oneProject.description}</p>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-2">
           {oneProject.techStack.map((tech, index) => (
             <span
               key={index}
@@ -53,7 +53,8 @@ const SingleProject = ({ oneProject }) => {
           ))}
         </div>
 
-        <div className="flex space-x-4 mt-5">
+        {/* Buttons */}
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mt-5">
           <Link
             to={oneProject.repository}
             target="_blank"

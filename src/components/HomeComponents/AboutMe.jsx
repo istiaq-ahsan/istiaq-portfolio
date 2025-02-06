@@ -15,20 +15,20 @@ const AboutMe = () => {
     }
   };
   return (
-    <div className="w-11/12 mx-auto py-16">
+    <div className="w-11/12 mx-auto md:py-16">
       <section className="bg-white dark:bg-gray-900">
         <div className="relative flex">
           <div className="min-h-screen lg:w-1/3"></div>
           <div className="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
 
           <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-            <h1 className="text-2xl text-center font-bold text-gray-500 capitalize lg:text-4xl dark:text-white">
+            <h1 className="text-2xl text-center font-bold text-gray-600 capitalize lg:text-4xl dark:text-white">
               About Me
             </h1>
 
             <div className="mt-10 lg:mt-20 lg:flex lg:items-center lg:gap-5">
               <img
-                className="object-cover object-center w-full lg:w-[32rem] rounded-lg h-96"
+                className="object-cover object-center w-full lg:w-[32rem] rounded-lg md:h-96 h-72"
                 src="https://i.ibb.co.com/1df3Mj5/IMG20230630192019-BURST000-COVER-01.jpg"
                 alt="Customer"
               />

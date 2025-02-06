@@ -72,9 +72,12 @@ this.skills.length>=5
             </Link>
           </div>
           <div className="mt-10">
-            <button className="btn btn-wide btn-lg bg-gray-500 hover:bg-gray-400 text-white">
+            <Link
+              to="https://drive.google.com/file/d/1ootQYlAW1o2HJJnYOlj8qf4deHq5qJXu/view?usp=drive_link"
+              className="btn btn-wide btn-lg bg-gray-500 hover:bg-gray-400 text-white"
+            >
               Get Resume
-            </button>
+            </Link>
           </div>
         </div>
 

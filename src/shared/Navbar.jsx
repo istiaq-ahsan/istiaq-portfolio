@@ -1,3 +1,4 @@
+import "animate.css";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#F2F2F2] shadow-md px-5 py-5 fixed top-0 z-50 backdrop-blur-2xl">
+      <div className="navbar bg-[#F2F2F2] shadow-md px-10 py-5 fixed top-0 z-50 backdrop-blur-2xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -68,13 +69,23 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Istiaq</a>
+          <div>
+            <h1
+              style={{ fontFamily: "'Dancing Script', cursive" }}
+              className="text-xl font-bold text-gray-600 animate__animated animate__fadeIn animate__infinite animate__slower"
+            >
+              ISTIAQ
+            </h1>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-6">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn btn-lg px-3 py-2 text-stone-500 bg-base-300 shadow-md hover:bg-gray-400 hover:text-white">
+          <Link
+            to="https://drive.google.com/file/d/1ootQYlAW1o2HJJnYOlj8qf4deHq5qJXu/view?usp=drive_link"
+            className="btn btn-lg px-3 py-2 text-stone-500 bg-base-300 shadow-md border border-gray-300 hover:bg-gray-500 hover:text-white"
+          >
             Get Resume
           </Link>
         </div>
