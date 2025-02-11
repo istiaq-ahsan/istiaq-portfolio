@@ -16,13 +16,13 @@ const AboutMe = () => {
   };
   return (
     <div className="w-11/12 mx-auto md:py-16">
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white ">
         <div className="relative flex">
           <div className="min-h-screen lg:w-1/3"></div>
-          <div className="hidden w-3/4 min-h-screen bg-gray-100 dark:bg-gray-800 lg:block"></div>
+          <div className="hidden w-3/4 min-h-screen bg-gray-100  lg:block"></div>
 
           <div className="container flex flex-col justify-center w-full min-h-screen px-6 py-10 mx-auto lg:absolute lg:inset-x-0">
-            <h1 className="text-2xl text-center font-bold text-gray-600 capitalize lg:text-4xl dark:text-white">
+            <h1 className="text-2xl text-center font-bold text-gray-600 capitalize lg:text-4xl ">
               About Me
             </h1>
 

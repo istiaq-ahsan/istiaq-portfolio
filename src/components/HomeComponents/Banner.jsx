@@ -73,7 +73,7 @@ this.skills.length>=5
           </div>
           <div className="mt-10">
             <Link
-              to="https://drive.google.com/file/d/1ootQYlAW1o2HJJnYOlj8qf4deHq5qJXu/view?usp=drive_link"
+              to="https://drive.google.com/file/d/11h-1Smqj6rkOdn0rD6oG62jwrxehn3_O/view?usp=drive_link"
               className="btn btn-wide btn-lg bg-gray-500 hover:bg-gray-400 text-white"
             >
               Get Resume

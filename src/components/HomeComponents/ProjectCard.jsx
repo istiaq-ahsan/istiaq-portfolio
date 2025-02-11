@@ -1,10 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
 const ProjectCard = ({ project }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
   return (
-    <div className="group [perspective:1000px] w-full h-[350px] bg-base-200 p-2 shadow-xl rounded-lg">
-      <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div
+      onClick={() => setIsFlipped(!isFlipped)}
+      className="group [perspective:1000px] w-full h-[350px] bg-base-200 p-2 shadow-xl rounded-lg"
+    >
+      <div
+        className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] 
+          ${isFlipped ? "[transform:rotateY(180deg)]" : ""} 
+          group-hover:[transform:rotateY(180deg)]`}
+      >
         {/* Front Side */}
         <div className="absolute w-full h-full backface-hidden rounded-lg overflow-hidden shadow-lg">
           <img
