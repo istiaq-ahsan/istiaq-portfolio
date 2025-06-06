@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <Link
-            to="https://drive.google.com/file/d/11h-1Smqj6rkOdn0rD6oG62jwrxehn3_O/view?usp=drive_link"
+            to="https://drive.google.com/file/d/15a1PtMzncJMgbcGb-nhWd_3_VctSQFGm/view?usp=drive_link"
             className="btn btn-lg px-3 py-2 text-stone-500 bg-base-300 shadow-md border border-gray-300 hover:bg-gray-500 hover:text-white"
           >
             Get Resume
