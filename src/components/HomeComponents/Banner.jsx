@@ -67,7 +67,7 @@ this.skills.length>=5
             <Link to="https://www.facebook.com/profile.php?id=100095084532947">
               <FaFacebookSquare />
             </Link>
-            <Link to="https://wa.me/01575306824">
+            <Link to="https://wa.me/01339542377">
               <FaWhatsappSquare />
             </Link>
           </div>
